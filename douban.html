@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。" name="description">
+    <link href=" style.css" rel="stylesheet" type="text/css">
+
+    <script src="script.js"></script>  
+
+
+  <title>豆瓣</title>
+
+ 
+
+  </head>
+
+
+
+
+
+  <body>
+
+
+    
+
+   <div id="header1">
+    <div class="nav-link">
+      <ul class="header1-ul">
+
+        <li>
+          <a class="read" target="_blank" href="http://book.douban.com">
+          	<span class="dushu">
+          		读书
+          	</span>
+          </a>
+        </li>
+
+        <li >
+           <a class="movie" target="_blank" href="http://movie.douban.com">
+           	<span class="dianying">
+           		电影
+           	</span>
+           </a>
+        </li>
+
+        <li>
+           <a class="music" target="_blank" href="http://music.douban.com">
+           	<span class="yinyue">
+           		音乐
+           	</span>
+           </a>
+        </li>
+
+        <li> 
+           <a class="group" target="_blank" href="http://www.douban.com/group/">
+           	<span class="xiaozu">小组</span>
+           </a>
+        </li>
+
+        <li>
+          <a class="city" target="_blank" href="http://www.douban.com/location/">
+          	<span class="tongcheng">
+          		同城
+          	</span>
+          </a>
+        </li>
+
+        <li> 
+           <a class="radio" target="_blank" href="http://douban.fm">
+            <span class="guangbo1">
+            	豆瓣
+            </span>
+            <span class="guangbo2">
+            	FM
+            </span>
+        </a>
+        </li>
+
+        <li>
+          <a class="stuff" target="_blank" href="http://dongxi.douban.com?dcs=anonymous-home&amp;dcm=douban">
+          	<span class="dongxi">
+          	東西
+            </span>
+         </a>
+        </li>
+      </ul>
+
+    </div>
+      
+    
+    <div class="nav-search">
+
+      <form id="search-form" action="http://www.douban.com/search" method="get">
+ 
+        
+          <input class="inputplace" type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、成员" name="search" autocomplete="off">
+
+          <a href="http://www.douban.com/search?search=">
+          	<div class="submitbutton">
+          	<img class="chazhao" src="img/chazhao.png"/>
+            </div>
+          </a>      
+
+      </form>
+
+    </div>
+
+    <div class="nav-logo">
+     <a target="_blank" href="http://www.douban.com/" >
+      <img src="img/logo.png"/>
+     </a>
+    </div>
+
+  </div>
+
+
+
+<div id="header2">
+  <div id="header2-wrapper">
+      <form class= "header2-form" action="http://www.douban.com/account/login" method="post" name="lzform">
+          
+
+          <div class="item-account">
+            <input class="inputaccount" type="text" name="account"   placeholder="邮箱/手机号" >
+            <label for="form-remember">
+              <input name="remember" type="checkbox" class="form-remember" >
+              <span>
+              	记住我
+              </span>
+            </label>
+          </div>
+
+          <div class="item-password">
+            <input class="form-password" type="password" name="form-password" placeholder="密码"> 
+           <a id="forgeter" href="http://www.douban.com/accounts/resetpassword">
+           	忘记密码
+           </a>
+          </div>
+
+          <div class="item-submit">
+            <input class="form-submit" value="登录" type="submit" >
+          </div>
+      </form>
+    
+      <a class="register" href="http://www.douban.com/accounts/register">
+          <span class="join">加入我们</span>
+          <span class="join2">注册</span>
+      </a>
+
+      <b>发现更多生活</b>
+      
+    </div>
+  </div>
+
+
+
+
+
+  <div id="content">
+    <div id="slider">
+    <ul id="snav">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <ul id="scont">
+      <li><a href="#"><img src="img/1.jpg"/></a></li>
+      <li><a href="#"><img src="img/2.jpg"/></a></li>
+      <li><a href="#"><img src="img/3.jpg"/></a></li>
+      <li><a href="#"><img src="img/4.jpg"/></a></li>
+    </ul>
+  
+    <div id="tleft">
+      <img src="img/turnleft.png"/>
+    </div>
+
+    <div id="tright">
+      <img src="img/turnright.png"/>
+    </div>
+    
+  </div>
+  
+  <ul id="snav1">
+        <li>陌生而熟悉的豆豆</li>
+        <li>新西兰公立大学</li>
+        <li>9块9休闲零食</li>
+        <li>兰蔻奇迹眼线液</li>
+    </ul>
+  <div id="huandeng">
+    
+    
+    <ul id="scont1">
+      <li><a href="#"><img src="img/5.jpg"/></a></li>
+      <li><a href="#"><img src="img/6.jpg"/></a></li>
+      <li><a href="#"><img src="img/7.jpg"/></a></li>
+      <li><a href="#"><img src="img/8.jpg"/></a></li>
+    </ul>
+  </div>
+
+    <img src="img/ad.jpg" />
+
+    <div id="main">
+      <h2>热点内容......</h2>
+      <div class="album">
+        <ul class="album-ul">
+          <li> 
+            <div class="picture1">
+             <a href="http://www.douban.com/photos/album/60260172/">
+              <img src="img/picture1.jpg"/> 
+             </a>
+             <a href="http://www.douban.com/photos/album/146870865/">
+              「首 尔 散 步」
+             </a>
+             <span class="num">
+              35张照片
+            </span>
+            </div>   
+          </li>
+
+
+          <li> 
+            <div class="picture2">
+             <a href="http://www.douban.com/photos/album/48317162/">
+              <img src="img/picture2.jpg"/> 
+             </a>
+             <a href="http://www.douban.com/photos/album/68414844/">
+              我的玻璃娃娃
+             </a>
+             <span class="num">
+              12张照片
+             </span>
+            </div>
+          </li>
+
+          <li>
+            <div class="picture3">
+             <a href="http://www.douban.com/photos/album/62723627/">
+              <img src="img/picture3.jpg"/> 
+             </a>
+             <a href="http://www.douban.com/photos/album/68414844/">
+              不确定的羁绊【不再更新
+             </a>
+             <span class="num">
+              133张照片
+            </span>      
+            </div>
+          </li>
+
+          <li>
+            <div class="picture4">
+             <a href="http://www.douban.com/photos/album/60260172/">
+              <img src="img/picture4.jpg"/> 
+             </a>
+             <a href="http://www.douban.com/photos/album/145814325/">
+              故都的秋
+             </a>
+             <span class="num">
+              27张照片
+            </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="notes">
+        <ul>
+          <div class="first">
+          <li >
+            <div>
+              <a href="http://www.douban.com/note/288573609/">
+                年轻不设限
+              </a>
+            </div>
+            <div class="author">
+              伊心的日记
+            </div>
+            <p>
+              我最大的正能量源泉是一个肤白貌美的勤奋姑娘。她就读于北京某高校，两年制的金融...
+            </p>
+          </li>
+          </div>
+          
+          <div class="second">
+          <li>
+            <a href="http://www.douban.com/note/446005895/">很多人想要逃离的原因，无非是希冀换一个地方幸福</a>
+          </li>
+          </div>
+
+          <div class="third">
+           <li>
+             <a href="http://www.douban.com/note/448035394/">
+              NO.38  某种程度，理财是为职场发展上一份保险（2014.11.03-09）
+             </a>
+           </li>
+          </div>
+
+          <div class="forth">
+            <li>
+              <a href="http://www.douban.com/note/443986426/">
+                NO.37  明确自己的理财目标才是成功的前提
+              </a>
+            </li>         
+          </div>
+
+          <div class="fifth">
+            <li>
+              <a href="http://www.douban.com/note/444673219/">
+                交际花普齐
+              </a>
+            </li>
+          </div>
+
+          <div class="sixth">
+            <li>
+              <a href="http://www.douban.com/note/446557237/">宜家（IKEA）神价格商品整理中
+              </a>
+            </li>
+          </div>
+
+          <div class="seventh">
+            <li>
+              <a href="http://www.douban.com/note/447792860/">这个夜晚，朱晓玫给我讲巴赫
+              </a>
+            </li>
+          </div>
+
+          <div class="eighth">
+            <li>
+              <a href="http://www.douban.com/note/443740191/">关于台湾的一个梦（8天7夜台湾西线，台北-台南-垦丁-九份）
+              </a>
+            </li>
+          </div>
+
+          <div class="nineth">
+            <li>
+              <a href="http://www.douban.com/note/429939210/">懒人日常护肤心水产品推荐
+              </a>
+            </li>
+          </div>
+
+          <div class="tenth">
+            <li>
+              <a href="http://www.douban.com/note/444657978/">我所能给你的，是什么都给不了
+              </a>
+            </li>
+          </div>
+        </ul>        
+      </div>
+    </div>
+
+
+    <div id="side">
+
+      <div id="moment">
+        <a target="_blank" href="http://moment.douban.com/app">
+          <img width="265" src="img/moment.jpg" />
+        </a>
+      </div>
+
+      <h2>
+        线上活动······
+        <span class="more">
+          (<a href="http://www.douban.com/online/?r=i" target="_self">更多</a>）
+        </span>
+      </h2>
+
+      <div id="online">
+        <ul>
+          <div class="activity1">
+          <li>
+            <a href="http://www.douban.com/online/11979490/">
+              晒一晒！一个人的精彩
+            </a>
+            <div class="desc">
+                时间：11月4日 - 1月3日
+                <br>
+                1544人参加
+            </div>
+          </li>
+        </div>
+
+
+          <div class="activity2">
+          <li>
+            <a href="http://www.douban.com/online/11977998/">創作由7個中文字組成的微小説
+            </a>
+            <div class="desc">
+                时间：11月3日 - 2月2日
+                <br>
+                1638人参加
+            </div>
+          </li>
+          </div>
+
+
+          <div class="activity3">
+          <li>
+            <a href="http://www.douban.com/online/11972673/">豆瓣女神（经）大收集，拯救这个被鸡汤淹没的世界</a>
+            <div class="desc">
+                时间：11月3日 - 12月10日
+                <br>
+                1106人参加
+            </div>
+          </li>
+          </div>
+        </ul>   
+      </div>
+    </div>
+    <img class="ad2" src="img/ad2.jpg" />
+  </div>
+
+
+
+ <div id="footer">
+ 	<span id="icp">
+    © 2005－2014 douban.com, all rights reserved
+    <br>
+    <a href="http://www.miibeian.gov.cn/">
+    	京ICP证090015号
+    </a> 
+    京ICP备11027288号 网络视听许可证
+    <a href="http://www.douban.com/about?topic=licence" target="_blank">
+    	0110418
+    </a>
+     号
+    <br>
+    文网文[2012]0704-231号 
+    <img src="img/biaoshi.gif">
+     京公网安备110105000728&nbsp;&nbsp;新出网证(京)字129号
+    <br>
+    违法和不良信息举报电话：4006910007
+   </span>
+
+   <span class="fright">
+    <a href="http://www.douban.com/about">
+    	关于豆瓣
+    </a>
+    · 
+    <a href="http://www.douban.com/jobs">
+    	在豆瓣工作
+    </a>
+    · 
+    <a href="http://www.douban.com/about?topic=contactus">联系我们
+    </a>
+    · 
+    <a href="http://www.douban.com/about?policy=disclaimer">
+    	免责声明
+    </a>   
+    · 
+    <a href="http://www.douban.com/help/">
+    	帮助中心
+    </a>
+    · 
+    <a href="http://developers.douban.com/" target="_blank">
+    	开发者
+    </a>
+    · 
+    <a href="http://www.douban.com/mobile/">
+    	移动应用
+    </a>
+    · 
+    <a href="http://www.douban.com/partner/">
+    	豆瓣广告
+    </a>
+ </span>
+ 	
+ </div>
+
+
+
+
+
+     
+
+
+</body>
+</html>
